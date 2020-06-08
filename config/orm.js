@@ -12,8 +12,8 @@ let orm = {
         });
     },
     insertOne: function(){
-        let query = "INSERT INTO " + table + " burger_name VALUES ?";
-        connection.query(query, burger.name, function( err, result )
+        let query = "INSERT INTO " + table + " burger VALUES ?";
+        connection.query(query, burger.burger, function( err, result )
         {
         callback(result);
         });

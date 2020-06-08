@@ -82,7 +82,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 5. Now you're going to run these SQL files.
 
-   * Make sure you're in the `db` folder of your app.
+   * Make sure you're in the `db` folder of your app. √
 
    * Start MySQL command line tool and login: `mysql -u root -p`.
 
@@ -94,48 +94,48 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside your `burger` directory, create a folder named `config`. √
 
-2. Create a `connection.js` file inside `config` directory.
+2. Create a `connection.js` file inside `config` directory. √
 
-   * Inside the `connection.js` file, setup the code to connect Node to MySQL.
+   * Inside the `connection.js` file, setup the code to connect Node to MySQL. √
 
-   * Export the connection.
+   * Export the connection. √
 
-3. Create an `orm.js` file inside `config` directory.
+3. Create an `orm.js` file inside `config` directory. √
 
-   * Import (require) `connection.js` into `orm.js`
+   * Import (require) `connection.js` into `orm.js` √
 
    * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-     * `selectAll()`
-     * `insertOne()`
-     * `updateOne()`
+     * `selectAll()` √
+     * `insertOne()` √
+     * `updateOne()` √
 
-   * Export the ORM object in `module.exports`.
+   * Export the ORM object in `module.exports`. √
 
 #### Model setup
 
-* Inside your `burger` directory, create a folder named `models`.
+* Inside your `burger` directory, create a folder named `models`. √
 
-  * In `models`, make a `burger.js` file.
+  * In `models`, make a `burger.js` file. √
 
-    * Inside `burger.js`, import `orm.js` into `burger.js`
+    * Inside `burger.js`, import `orm.js` into `burger.js`√
 
     * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `burger.js` file. √
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `burger` directory, create a folder named `controllers`. √
 
-2. In `controllers`, create the `burgers_controller.js` file.
+2. In `controllers`, create the `burgers_controller.js` file. √
 
 3. Inside the `burgers_controller.js` file, import the following:
 
-   * Express
-   * `burger.js`
+   * Express √
+   * `burger.js` √
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
 
