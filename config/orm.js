@@ -18,10 +18,22 @@ let orm = {
         callback(result);
         });
     },
-    updateOne: function(callback) {
-
+    updateOne: function(table, objColVal, condition, callback) {
+        let query = "UPDATE " + table;
+        query += " SET ";
+        query += objToSql(objColVal);
+        query += " WHERE ";
+        query += condition;
+    
+        console.log(query);
+        connection.query(queryString, function(err, result) {
+            if (err) {
+              throw err;
+            }
+            callback(result);
+    }); 
     }
 
-
-
 }
+
+module.exports = orm;
